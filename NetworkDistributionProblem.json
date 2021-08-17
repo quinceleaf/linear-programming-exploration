@@ -1,0 +1,485 @@
+{
+    "objective": {
+        "name": "sum_of_transport_costs",
+        "coefficients": [
+            { "name": "Route_cincinnati_charlotte", "value": 83 },
+            { "name": "Route_cincinnati_scranton", "value": 72 },
+            { "name": "Route_atlanta_charlotte", "value": 122 },
+            { "name": "Route_atlanta_scranton", "value": 35 },
+            { "name": "Route_detroit_charlotte", "value": 75 },
+            { "name": "Route_detroit_scranton", "value": 95 },
+            { "name": "Route_cincinnati_providence", "value": 125 },
+            { "name": "Route_cincinnati_philadelphia", "value": 85 },
+            { "name": "Route_cincinnati_columbus", "value": 15 },
+            { "name": "Route_cincinnati_knoxville", "value": 34 },
+            { "name": "Route_cincinnati_jacksonville", "value": 113 },
+            { "name": "Route_cincinnati_richmond", "value": 76 },
+            { "name": "Route_atlanta_providence", "value": 163 },
+            { "name": "Route_atlanta_philadelphia", "value": 114 },
+            { "name": "Route_atlanta_columbus", "value": 82 },
+            { "name": "Route_atlanta_knoxville", "value": 31 },
+            { "name": "Route_atlanta_jacksonville", "value": 45 },
+            { "name": "Route_atlanta_richmond", "value": 75 },
+            { "name": "Route_detroit_providence", "value": 106 },
+            { "name": "Route_detroit_philadelphia", "value": 85 },
+            { "name": "Route_detroit_columbus", "value": 32 },
+            { "name": "Route_detroit_knoxville", "value": 75 },
+            { "name": "Route_detroit_jacksonville", "value": 152 },
+            { "name": "Route_detroit_richmond", "value": 93 },
+            { "name": "Route_charlotte_providence", "value": 44 },
+            { "name": "Route_charlotte_philadelphia", "value": 21 },
+            { "name": "Route_charlotte_columbus", "value": 73 },
+            { "name": "Route_charlotte_knoxville", "value": 94 },
+            { "name": "Route_charlotte_jacksonville", "value": 143 },
+            { "name": "Route_charlotte_richmond", "value": 61 },
+            { "name": "Route_scranton_providence", "value": 124 },
+            { "name": "Route_scranton_philadelphia", "value": 84 },
+            { "name": "Route_scranton_columbus", "value": 64 },
+            { "name": "Route_scranton_knoxville", "value": 35 },
+            { "name": "Route_scranton_jacksonville", "value": 52 },
+            { "name": "Route_scranton_richmond", "value": 41 }
+        ]
+    },
+    "constraints": [
+        {
+            "sense": -1,
+            "pi": null,
+            "constant": -20,
+            "name": "sum_of_flow_supplied_by_plant__cincinnati_",
+            "coefficients": [
+                { "name": "Route_cincinnati_providence", "value": 1 },
+                { "name": "Route_cincinnati_philadelphia", "value": 1 },
+                { "name": "Route_cincinnati_columbus", "value": 1 },
+                { "name": "Route_cincinnati_knoxville", "value": 1 },
+                { "name": "Route_cincinnati_jacksonville", "value": 1 },
+                { "name": "Route_cincinnati_richmond", "value": 1 }
+            ]
+        },
+        {
+            "sense": -1,
+            "pi": null,
+            "constant": -20,
+            "name": "sum_of_flow_supplied_by_plant__atlanta_",
+            "coefficients": [
+                { "name": "Route_atlanta_providence", "value": 1 },
+                { "name": "Route_atlanta_philadelphia", "value": 1 },
+                { "name": "Route_atlanta_columbus", "value": 1 },
+                { "name": "Route_atlanta_knoxville", "value": 1 },
+                { "name": "Route_atlanta_jacksonville", "value": 1 },
+                { "name": "Route_atlanta_richmond", "value": 1 }
+            ]
+        },
+        {
+            "sense": -1,
+            "pi": null,
+            "constant": -20,
+            "name": "sum_of_flow_supplied_by_plant__detroit_",
+            "coefficients": [
+                { "name": "Route_detroit_providence", "value": 1 },
+                { "name": "Route_detroit_philadelphia", "value": 1 },
+                { "name": "Route_detroit_columbus", "value": 1 },
+                { "name": "Route_detroit_knoxville", "value": 1 },
+                { "name": "Route_detroit_jacksonville", "value": 1 },
+                { "name": "Route_detroit_richmond", "value": 1 }
+            ]
+        },
+        {
+            "sense": 1,
+            "pi": null,
+            "constant": -4,
+            "name": "sum_of_flow_received_by_warehouse__providence_",
+            "coefficients": [
+                { "name": "Route_cincinnati_providence", "value": 1 },
+                { "name": "Route_atlanta_providence", "value": 1 },
+                { "name": "Route_detroit_providence", "value": 1 }
+            ]
+        },
+        {
+            "sense": 1,
+            "pi": null,
+            "constant": -15,
+            "name": "sum_of_flow_received_by_warehouse__philadelphia_",
+            "coefficients": [
+                { "name": "Route_cincinnati_philadelphia", "value": 1 },
+                { "name": "Route_atlanta_philadelphia", "value": 1 },
+                { "name": "Route_detroit_philadelphia", "value": 1 }
+            ]
+        },
+        {
+            "sense": 1,
+            "pi": null,
+            "constant": -5,
+            "name": "sum_of_flow_received_by_warehouse__columbus_",
+            "coefficients": [
+                { "name": "Route_cincinnati_columbus", "value": 1 },
+                { "name": "Route_atlanta_columbus", "value": 1 },
+                { "name": "Route_detroit_columbus", "value": 1 }
+            ]
+        },
+        {
+            "sense": 1,
+            "pi": null,
+            "constant": -12,
+            "name": "sum_of_flow_received_by_warehouse__knoxville_",
+            "coefficients": [
+                { "name": "Route_cincinnati_knoxville", "value": 1 },
+                { "name": "Route_atlanta_knoxville", "value": 1 },
+                { "name": "Route_detroit_knoxville", "value": 1 }
+            ]
+        },
+        {
+            "sense": 1,
+            "pi": null,
+            "constant": -3,
+            "name": "sum_of_flow_received_by_warehouse__jacksonville_",
+            "coefficients": [
+                { "name": "Route_cincinnati_jacksonville", "value": 1 },
+                { "name": "Route_atlanta_jacksonville", "value": 1 },
+                { "name": "Route_detroit_jacksonville", "value": 1 }
+            ]
+        },
+        {
+            "sense": 1,
+            "pi": null,
+            "constant": -8,
+            "name": "sum_of_flow_received_by_warehouse__richmond_",
+            "coefficients": [
+                { "name": "Route_cincinnati_richmond", "value": 1 },
+                { "name": "Route_atlanta_richmond", "value": 1 },
+                { "name": "Route_detroit_richmond", "value": 1 }
+            ]
+        },
+        {
+            "sense": 0,
+            "pi": null,
+            "constant": 0,
+            "name": "holding_at_terminal__charlotte_",
+            "coefficients": [
+                { "name": "Route_cincinnati_charlotte", "value": 1 },
+                { "name": "Route_atlanta_charlotte", "value": 1 },
+                { "name": "Route_detroit_charlotte", "value": 1 },
+                { "name": "Route_charlotte_providence", "value": -1 },
+                { "name": "Route_charlotte_philadelphia", "value": -1 },
+                { "name": "Route_charlotte_columbus", "value": -1 },
+                { "name": "Route_charlotte_knoxville", "value": -1 },
+                { "name": "Route_charlotte_jacksonville", "value": -1 },
+                { "name": "Route_charlotte_richmond", "value": -1 }
+            ]
+        },
+        {
+            "sense": 0,
+            "pi": null,
+            "constant": 0,
+            "name": "holding_at_terminal__scranton_",
+            "coefficients": [
+                { "name": "Route_cincinnati_scranton", "value": 1 },
+                { "name": "Route_atlanta_scranton", "value": 1 },
+                { "name": "Route_detroit_scranton", "value": 1 },
+                { "name": "Route_scranton_providence", "value": -1 },
+                { "name": "Route_scranton_philadelphia", "value": -1 },
+                { "name": "Route_scranton_columbus", "value": -1 },
+                { "name": "Route_scranton_knoxville", "value": -1 },
+                { "name": "Route_scranton_jacksonville", "value": -1 },
+                { "name": "Route_scranton_richmond", "value": -1 }
+            ]
+        }
+    ],
+    "variables": [
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_charlotte"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_columbus"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_jacksonville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_knoxville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_philadelphia"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_providence"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_richmond"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_atlanta_scranton"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_charlotte_columbus"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_charlotte_jacksonville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_charlotte_knoxville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_charlotte_philadelphia"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_charlotte_providence"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_charlotte_richmond"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_charlotte"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_columbus"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_jacksonville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_knoxville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_philadelphia"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_providence"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_richmond"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_cincinnati_scranton"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_charlotte"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_columbus"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_jacksonville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_knoxville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_philadelphia"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_providence"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_richmond"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_detroit_scranton"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_scranton_columbus"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_scranton_jacksonville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_scranton_knoxville"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_scranton_philadelphia"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_scranton_providence"
+        },
+        {
+            "lowBound": 0,
+            "upBound": null,
+            "cat": "Integer",
+            "varValue": null,
+            "dj": null,
+            "name": "Route_scranton_richmond"
+        }
+    ],
+    "parameters": {
+        "name": "network_distribution_problem",
+        "sense": 1,
+        "status": 0,
+        "sol_status": 0
+    },
+    "sos1": [],
+    "sos2": []
+}
